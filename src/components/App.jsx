@@ -1,5 +1,5 @@
 import { Cart } from './Cart';
-import user from '../../'
+import user from '../user.json'
 
 export const App = () => {
   return (
@@ -13,7 +13,7 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      <Cart/>
+      <Cart cart={ user[0] } />
     </div>
   );
 };

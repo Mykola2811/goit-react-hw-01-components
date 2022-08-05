@@ -1,12 +1,11 @@
 import PropTypes from 'prop-types';
-
-
-export const TrItem = ({  type, amount, currency}) => {
-    return <TrItem>
-            <td>{type}</td>
-            <td>{amount}</td>
-            <td>{currency}</td>
-        </TrItem>
+import { Td  } from './TransactionHistory.styled';
+export const TrItem = ({ items: { type, amount, currency } }) => {
+    return <tr>
+            <Td>{type}</Td>
+            <Td>{amount}</Td>
+            <Td>{currency}</Td>
+        </tr>
 }
 
 TrItem.propTypes = {

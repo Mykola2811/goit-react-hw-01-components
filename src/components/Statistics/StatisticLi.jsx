@@ -11,7 +11,7 @@ export const StatisticLi = ({ static: { label, percentage } }) => {
 }
 
 StatisticLi.propTypes = {
-    label: PropTypes.string,
-    percentage: PropTypes.number,
-    id: PropTypes.string,
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
 };

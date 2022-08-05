@@ -2,19 +2,20 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
     text-align: center;
-    border: 1px solid #000;
     border-radius: 8px;
     flex-direction: column;
     margin-left: 0;
     margin-bottom: 20px;
     max-width: 400px;
+    box-shadow: 1px 4px 3px rgb(0 0 0 / 20%), 0 1px 1px rgb(0 0 0 / 14%), 1px 4px 3px rgb(0 0 0 / 12%);
+    
     
 `;
 
 export const Avatar = styled.img`
     border-radius: 100px;
+    background-color: rgb(176,196,222,0.5);
     width: 45%;
-    border: 1px solid #000;
 `;
 
 export const Stats = styled.ul`
@@ -22,6 +23,9 @@ export const Stats = styled.ul`
     justify-content: center;
     margin: 0;
     padding: 0;
+    border-radius:  0 0 8px 8px;
+    background-color: #f3f6f9;
+    
     
 `;
 
@@ -29,17 +33,20 @@ export const StatsLi = styled.li`
     display: flex;
     flex-direction: column;
     gap: 5px;
-    border: 1px solid #000;
+    
     width: 33%;
     height: auto;
     padding: 10px 0;
-    background: floralwhite;
-    background: gainsboro;
+    
+
 
 `;
 
 export const Description = styled.div`
-    padding-top: 20px;
+    background-color: #fff;
+    padding: 20px 0;
+    border: 1px;
+    border-radius: 8px 8px 0 0 ;
 `;
 export const Name = styled.p`
    margin: 35px 0 0 0;

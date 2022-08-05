@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
-export const TrItem = ({ transaction: { type, amount, currency } }) => {
+
+export const TrItem = ({  type, amount, currency}) => {
     return <TrItem>
             <td>{type}</td>
             <td>{amount}</td>
@@ -9,7 +10,7 @@ export const TrItem = ({ transaction: { type, amount, currency } }) => {
 }
 
 TrItem.propTypes = {
-    type: PropTypes.string,
-    amount: PropTypes.string,
-    currency: PropTypes.string,
+    type: PropTypes.string.isRequired,
+    amount: PropTypes.string.isRequired,
+    currency: PropTypes.string.isRequired,
 };

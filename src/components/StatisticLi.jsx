@@ -1,4 +1,4 @@
-import { Wrapper,Label,Li} from './styled/Statistics.styled';
+import { Label,Li} from './styled/Statistics.styled';
 
 export const StatisticLi = ({ static: { id, label, percentage } }) => {
     

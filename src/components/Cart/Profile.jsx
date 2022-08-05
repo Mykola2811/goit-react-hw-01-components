@@ -1,4 +1,6 @@
-import { Wrapper,Avatar,Stats,StatsLi,Description,Name,Tag,Location,Label,Quantity } from './styled/Cart.styled';
+import { Wrapper,Avatar,Stats,StatsLi,Description,Name,Tag,Location,Label,Quantity } from './Profile.styled';
+import PropTypes from 'prop-types';
+
 
 export const Profile = ({ cart: { username, tag, location, avatar, stats: {
   followers,views,likes
@@ -31,11 +33,16 @@ export const Profile = ({ cart: { username, tag, location, avatar, stats: {
 </Wrapper>;
 }
 
-// Cart.propTypes = {
-//   cart: PropTypes.exact({
-//       username: PropTypes.string,
-//       tag: PropTypes.string,
-//       location: PropTypes.string,
-//       avatar: PropTypes.string,
-//   })
-// }
+
+Profile.propTypes = {
+  username: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
+  stats: PropTypes.exact({
+    followers: PropTypes.node,
+    views: PropTypes.node,
+    likes: PropTypes.node,
+  })
+    
+};

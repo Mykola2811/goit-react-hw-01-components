@@ -1,5 +1,5 @@
-import { Wrapper,Ul } from './styled/FriendList.styled';
-import friends from '../friends.json';
+import { Wrapper,Ul } from './FriendList.styled';
+import friends from '../../friends.json';
 import { FriendListItem } from './FriendListItem';
 
 export const FriendList = () => {
@@ -10,3 +10,4 @@ export const FriendList = () => {
       </Ul>
 </Wrapper>;
 }
+

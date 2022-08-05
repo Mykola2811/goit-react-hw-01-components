@@ -6,8 +6,9 @@ export const Wrapper = styled.section`
     border-radius: 8px;
     display: inline-flex;
     flex-direction: column;
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
     
 `;
 export const Label = styled.span`
@@ -26,9 +27,9 @@ export const Li = styled.li`
   flex-direction: column;
   justify-content: center;
   border: 1px solid #000;
-  width: 90px;
-  height: 90px;
-  gap: 10px;
+  width: 100%;
+  height: auto;
+  gap: 5px;
 `;
 export const H2 = styled.span`
   color: slategrey;

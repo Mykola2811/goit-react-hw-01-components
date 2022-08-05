@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+    max-width: 400px;
     
 `;
 export const Ul = styled.ul`
@@ -14,7 +16,7 @@ export const Ul = styled.ul`
     margin: 0;
     list-style: none;
     gap: 20px;
-    width: 300px;
+    width: 100%;
     
 `;
 export const Li = styled.li`
@@ -24,6 +26,7 @@ export const Li = styled.li`
     border: 1px solid #000;
     border-radius: 8px;
     padding: 10px 20px;
+    
 `;
 export const Span = styled.span`
     width: 20px;

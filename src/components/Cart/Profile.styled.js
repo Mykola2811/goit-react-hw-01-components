@@ -4,16 +4,16 @@ export const Wrapper = styled.div`
     text-align: center;
     border: 1px solid #000;
     border-radius: 8px;
-    display: inline-flex;
     flex-direction: column;
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    max-width: 400px;
     
 `;
 
 export const Avatar = styled.img`
     border-radius: 100px;
-    width: 170px;
+    width: 45%;
     border: 1px solid #000;
 `;
 
@@ -30,16 +30,16 @@ export const StatsLi = styled.li`
     flex-direction: column;
     gap: 5px;
     border: 1px solid #000;
-    padding: 40px 10px;
-    width: 30%;
+    width: 33%;
+    height: auto;
+    padding: 10px 0;
     background: floralwhite;
     background: gainsboro;
 
 `;
 
 export const Description = styled.div`
-    padding: 40px 110px;
-
+    padding-top: 20px;
 `;
 export const Name = styled.p`
    margin: 35px 0 0 0;

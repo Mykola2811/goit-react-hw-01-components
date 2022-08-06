@@ -9,7 +9,7 @@ export const TrItem = ({ items: { type, amount, currency } }) => {
 }
 
 TrItem.propTypes = {
-    type: PropTypes.string.isRequired,
-    amount: PropTypes.string.isRequired,
-    currency: PropTypes.string.isRequired,
+    type: PropTypes.string,
+    amount: PropTypes.string,
+    currency: PropTypes.string,
 };

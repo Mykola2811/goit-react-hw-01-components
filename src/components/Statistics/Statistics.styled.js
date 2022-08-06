@@ -25,15 +25,28 @@ export const List = styled.ul`
   padding: 0;
   color: #fff;
 `;
+
+
+  
+ export function onChangeColor() {
+    const bgColor = document.querySelectorAll(".bg__color");
+    for (const bgr of bgColor) {
+      function getRandomHexColor() {
+        return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+      }
+      const hexColor = getRandomHexColor();
+      bgr.style.backgroundColor = `${hexColor}`;
+    }     
+  }
 export const Li = styled.li`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(186,85,211);
   width: 100%;
   height: auto;
   gap: 5px;
   padding: 10px 0;
+  background: ${p => p.selected ? onChangeColor() : onChangeColor()};
 `;
 export const H2 = styled.span`
   color: slategrey;

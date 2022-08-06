@@ -1,6 +1,7 @@
 import { Wrapper,Ul } from './FriendList.styled';
 import friends from '../../friends.json';
 import { FriendListItem } from './FriendListItem';
+import PropTypes from 'prop-types';
 
 export const FriendList = () => {
     
@@ -10,4 +11,10 @@ export const FriendList = () => {
       </Ul>
 </Wrapper>;
 }
-
+FriendList.propTypes = {
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+    })
+  ),
+};

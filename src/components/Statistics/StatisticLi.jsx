@@ -16,11 +16,7 @@ StatisticLi.propTypes = {
 
 
 
-window.addEventListener('load', (event) => {
-  onClick(event)
-})
-
-function onClick(event) {
+window.addEventListener('load', () => {
   setTimeout(function() {
     const bgColor = document.querySelectorAll(".bg__color");
     for (const bgr of bgColor) {
@@ -31,5 +27,7 @@ function onClick(event) {
         const hexColor = getRandomHexColor();
         bgr.style.backgroundColor = `${hexColor}`;
     }
-  }, 0);  
-}
+  }, 0); 
+})
+
+

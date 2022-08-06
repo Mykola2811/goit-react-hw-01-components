@@ -23,12 +23,10 @@ export const List = styled.ul`
   display: flex;
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: ${p => p.theme.white};
 `;
 
-
-  
- export function onChangeColor() {
+export function onChangeColor() {
     const bgColor = document.querySelectorAll(".bg__color");
     for (const bgr of bgColor) {
       function getRandomHexColor() {
@@ -36,8 +34,8 @@ export const List = styled.ul`
       }
       const hexColor = getRandomHexColor();
       bgr.style.backgroundColor = `${hexColor}`;
-    }     
-  }
+  }    
+}
 export const Li = styled.li`
   display: flex;
   flex-direction: column;
@@ -46,7 +44,7 @@ export const Li = styled.li`
   height: auto;
   gap: 5px;
   padding: 10px 0;
-  background: ${p => p.selected ? onChangeColor() : onChangeColor()};
+  background-color: ${onChangeColor()};
 `;
 export const H2 = styled.span`
   color: slategrey;

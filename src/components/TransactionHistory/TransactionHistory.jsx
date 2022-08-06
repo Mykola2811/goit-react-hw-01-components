@@ -1,4 +1,4 @@
-import transactions from '../../transactions.json';
+import transactions from '../../data/transactions.json';
 import { TrItem } from './TrItem';
 import { Table,Th } from './TransactionHistory.styled';
 

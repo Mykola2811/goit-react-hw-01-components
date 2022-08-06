@@ -2,8 +2,7 @@ import { Label,Li} from './Statistics.styled';
 import PropTypes from 'prop-types';
 
 export const StatisticLi = ({ static: { label, percentage } }) => {
-  
-  return <Li className='bg__color' selected={ label === ''}>
+  return <Li className='bg__color'>
       <Label>{label}</Label>
       <span>{percentage}%</span>
     </Li>
@@ -13,7 +12,5 @@ export const StatisticLi = ({ static: { label, percentage } }) => {
 StatisticLi.propTypes = {
   label: PropTypes.string,
   percentage: PropTypes.number,
-  id: PropTypes.string,
 };
-
 

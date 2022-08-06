@@ -1,5 +1,5 @@
 import { Wrapper,Ul } from './FriendList.styled';
-import friends from '../../friends.json';
+import friends from '../../data/friends';
 import { FriendListItem } from './FriendListItem';
 import PropTypes from 'prop-types';
 

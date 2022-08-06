@@ -1,6 +1,6 @@
 import { Wrapper,List,H2 } from './Statistics.styled';
 import { StatisticLi } from './StatisticLi';
-import data from '../../data.json';
+import data from '../../data/data.json';
 
 export const Statistics = () => {
     

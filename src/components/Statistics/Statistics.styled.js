@@ -26,16 +26,6 @@ export const List = styled.ul`
   color: ${p => p.theme.white};
 `;
 
-export function onChangeColor() {
-    const bgColor = document.querySelectorAll(".bg__color");
-    for (const bgr of bgColor) {
-      function getRandomHexColor() {
-        return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-      }
-      const hexColor = getRandomHexColor();
-      bgr.style.backgroundColor = `${hexColor}`;
-  }    
-}
 export const Li = styled.li`
   display: flex;
   flex-direction: column;
@@ -44,13 +34,12 @@ export const Li = styled.li`
   height: auto;
   gap: 5px;
   padding: 10px 0;
-  background-color: ${onChangeColor()};
 `;
+
+
 export const H2 = styled.span`
   color: slategrey;
   font-size: 35px;
-  padding: 40px 0;
-  
-  
-
+  padding: 40px 0;  
 `;
+

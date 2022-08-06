@@ -5,7 +5,7 @@ export const Wrapper = styled.section`
     
     display: inline-flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: ${p => p.theme.space[5]}px;
     width: 100%;
     max-width: 400px;
     box-shadow: 1px 4px 3px rgb(0 0 0 / 20%), 0 1px 1px rgb(0 0 0 / 14%), 1px 4px 3px rgb(0 0 0 / 12%);
@@ -17,7 +17,6 @@ export const Label = styled.span`
   font-size: 20px;
 `;
 export const List = styled.ul`
-
   font-size: 20px;
   list-style: none;
   display: flex;

@@ -1,14 +1,23 @@
-import { Wrapper,List,H2 } from './Statistics.styled';
-import { StatisticLi } from './StatisticLi';
-import data from '../../data/data.json';
+import { Wrapper, List, H2, Label, Li } from './Statistics.styled';
+import PropTypes from 'prop-types';
+import './getRandomHexColor';
 
-export const Statistics = () => {
-    
+
+export const Statistics = ({data}) => {
   return <Wrapper className="statistics">
     <H2 className="title">Upload stats</H2>
-
-  <List className="stat-list">
-        {data.map(statics => (<StatisticLi key={statics.id} title="Upload stats" static={statics} />))}
+    <List className="stat-list">
+      {data.map(data => (
+        <Li key={data.id} className='bg__color'>
+          <Label>{data.label}</Label>
+          <span>{data.percentage}%</span>
+        </Li>))
+      }
   </List>
 </Wrapper>;
 }
+
+Statistics.propTypes = {
+  label: PropTypes.string,
+  percentage: PropTypes.number,
+};

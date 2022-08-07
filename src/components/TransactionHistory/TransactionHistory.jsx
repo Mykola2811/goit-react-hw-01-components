@@ -1,9 +1,7 @@
-import transactions from '../../data/transactions.json';
-import { TrItem } from './TrItem';
-import { Table,Th } from './TransactionHistory.styled';
+import { Table, Th, Td } from './TransactionHistory.styled';
+import PropTypes from 'prop-types';
 
-export const TransactionHistory = () => {
-    
+export const TransactionHistory = ({transactions}) => {
     return (<Table className="transaction-history">
   <thead>
     <tr>
@@ -13,8 +11,21 @@ export const TransactionHistory = () => {
     </tr>
       </thead>
   <tbody >
-    {transactions.map(transactions => (<TrItem key={transactions.id}  items={transactions} />))}
+        {transactions.map(transactions => (
+          <tr key={transactions.id} >
+            <Td>{transactions.type}</Td>
+            <Td>{transactions.amount}</Td>
+            <Td>{transactions.currency}</Td>
+          </tr>))
+        }
   </tbody>
 </Table>);
 }
+
+TransactionHistory.propTypes = {
+  type: PropTypes.string,
+  amount: PropTypes.string,
+  currency: PropTypes.string,
+  id: PropTypes.string,
+};
 

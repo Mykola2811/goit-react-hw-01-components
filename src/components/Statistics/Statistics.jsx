@@ -6,10 +6,10 @@ export const Statistics = ({data,title}) => {
   return <Wrapper className="statistics">
     {title !== undefined ? <H2 className="title">{title}</H2> : undefined}
     <List className="stat-list">
-      {data.map(data => (
-        <Li key={data.id} className='bg__color'>
-          <Label>{data.label}</Label>
-          <span>{data.percentage}%</span>
+      {data.map(({id,label,percentage}) => (
+        <Li key={id} className='bg__color'>
+          <Label>{label}</Label>
+          <span>{percentage}%</span>
         </Li>))
       }
   </List>

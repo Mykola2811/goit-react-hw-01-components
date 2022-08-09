@@ -2,9 +2,9 @@ import { Wrapper,Avatar,Stats,StatsLi,Description,Name,Tag,Location,Label,Quanti
 import PropTypes from 'prop-types';
 
 
-export const Profile = ({ cart: { username, tag, location, avatar, stats: {
+export const Profile = ( {username, tag, location, avatar, stats: {
   followers,views,likes
-}} }) => {
+} }) => {
   return <Wrapper>
   <Description>
     <Avatar

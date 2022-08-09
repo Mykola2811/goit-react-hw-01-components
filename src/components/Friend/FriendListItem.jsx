@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 export const FriendListItem = ({friend: {avatar,name,isOnline}}) => {
   return <Li>
-      <Span selected={isOnline === true}> </Span>
+      <Span selected={isOnline === true}></Span>
   <Img src={avatar} alt="User avatar" width="48" />
   <p>{name}</p>
 </Li>;

@@ -2,10 +2,9 @@ import { Wrapper, List, H2, Label, Li } from './Statistics.styled';
 import PropTypes from 'prop-types';
 import './getRandomHexColor';
 
-
-export const Statistics = ({data}) => {
+export const Statistics = ({data,title}) => {
   return <Wrapper className="statistics">
-    <H2 className="title">Upload stats</H2>
+    {title !== undefined ? <H2 className="title">{title}</H2> : undefined}
     <List className="stat-list">
       {data.map(data => (
         <Li key={data.id} className='bg__color'>
@@ -18,6 +17,10 @@ export const Statistics = ({data}) => {
 }
 
 Statistics.propTypes = {
-  label: PropTypes.string,
-  percentage: PropTypes.number,
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    })
+  ),
+  title: PropTypes.string,
 };

@@ -22,10 +22,12 @@ export const TransactionHistory = ({transactions}) => {
 </Table>);
 }
 
+
 TransactionHistory.propTypes = {
-  type: PropTypes.string,
-  amount: PropTypes.string,
-  currency: PropTypes.string,
-  id: PropTypes.string,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    })
+  ),
 };
 

@@ -37,6 +37,7 @@ export const Span = styled.span`
     width: 20px;
     height: 20px;
     border-radius: 50%;
+    color: ${p => p.selected ? 'green' : 'red'};
 
 `;
 export const Img = styled.img`

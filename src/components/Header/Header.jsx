@@ -15,21 +15,21 @@ export const Header = () => {
   return <Wrapper >
       <Ul >
           <Heder>
-              <img src={Image10} alt="rewards image" width={174} />
+              <img src={Image10} alt="rewards" width={174} />
           </Heder>
-          <img src={Image9} alt="rewards image" width={78} height={50} style={{marginBottom: 22}} />
+          <img src={Image9} alt="rewards" width={78} height={50} style={{marginBottom: 22}} />
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-end', paddingRight: 10}}>
-            <img src={Image1} alt="rewards image" width={331} style={{marginBottom: 16, marginRight: 0, display: 'block'}}/>
-            <img src={Image2} alt="rewards image" width={331} style={{marginBottom: 40, marginRight: 0, display: 'block'}}/>
-            <img src={Image3} alt="rewards image" width={331} style={{marginBottom: 40, marginRight: 0, display: 'block'}}/>
-            <img src={Image4} alt="rewards image" width={331} style={{marginBottom: 40, marginRight: 0, display: 'block'}}/>
-            <img src={Image5} alt="rewards image" width={331} style={{ marginBottom: 70, marginRight: 0, display: 'block' }} />
+            <img src={Image1} alt="rewards" width={331} style={{marginBottom: 16, marginRight: 0, display: 'block'}}/>
+            <img src={Image2} alt="rewards" width={331} style={{marginBottom: 40, marginRight: 0, display: 'block'}}/>
+            <img src={Image3} alt="rewards" width={331} style={{marginBottom: 40, marginRight: 0, display: 'block'}}/>
+            <img src={Image4} alt="rewards" width={331} style={{marginBottom: 40, marginRight: 0, display: 'block'}}/>
+            <img src={Image5} alt="rewards" width={331} style={{ marginBottom: 70, marginRight: 0, display: 'block' }} />
           </div>
-          <img src={Image12} alt="rewards image" width={87} height={50} style={{marginBottom: 43}}/>
-          <img src={Image6} alt="rewards image" style={{marginBottom: 40}}/>
-          <img src={Image7} alt="rewards image" style={{marginBottom: 55}}/>
-          <img src={Image8} alt="rewards image" width={266} style={{marginBottom: 51}}/>
-          <img src={Image11} alt="rewards image" />
+          <img src={Image12} alt="rewards" width={87} height={50} style={{marginBottom: 43}}/>
+          <img src={Image6} alt="rewards" style={{marginBottom: 40}}/>
+          <img src={Image7} alt="rewards" style={{marginBottom: 55}}/>
+          <img src={Image8} alt="rewards" width={266} style={{marginBottom: 51}}/>
+          <img src={Image11} alt="rewards" />
       </Ul>
 </Wrapper>;
 }

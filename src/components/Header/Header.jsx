@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import { FriendListItem } from './FriendListItem';
-import PropTypes from 'prop-types';
 import Image1 from '../../img/Image1.png';
 import Image2 from '../../img/image2.png';
 import Image3 from '../../img/image3.png';

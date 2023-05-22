@@ -1,13 +1,23 @@
 {
   "files": {
     "main.css": "/goit-react-hw-01-components/static/css/main.54a66b89.css",
-    "main.js": "/goit-react-hw-01-components/static/js/main.35df6f86.js",
+    "main.js": "/goit-react-hw-01-components/static/js/main.83339261.js",
+    "static/media/Group.png": "/goit-react-hw-01-components/static/media/Group.734c70fe364c1c0841f2.png",
+    "static/media/Image1.png": "/goit-react-hw-01-components/static/media/Image1.2ede727641a648466cc2.png",
+    "static/media/image6.png": "/goit-react-hw-01-components/static/media/image6.df782af765ffca17538d.png",
+    "static/media/image2.png": "/goit-react-hw-01-components/static/media/image2.cfd3a54f87169b3d9970.png",
+    "static/media/image4.png": "/goit-react-hw-01-components/static/media/image4.ce8c2112fda214298575.png",
+    "static/media/image5.png": "/goit-react-hw-01-components/static/media/image5.95dc2718160e62775f51.png",
+    "static/media/image7.png": "/goit-react-hw-01-components/static/media/image7.fa6cb2c5019d85d0eb12.png",
+    "static/media/image8.png": "/goit-react-hw-01-components/static/media/image8.971296486580d743f1d0.png",
+    "static/media/image3.png": "/goit-react-hw-01-components/static/media/image3.4237003070bcbe21d98a.png",
+    "static/media/Frame6.png": "/goit-react-hw-01-components/static/media/Frame6.4f1ba2b46bf67b429207.png",
     "index.html": "/goit-react-hw-01-components/index.html",
     "main.54a66b89.css.map": "/goit-react-hw-01-components/static/css/main.54a66b89.css.map",
-    "main.35df6f86.js.map": "/goit-react-hw-01-components/static/js/main.35df6f86.js.map"
+    "main.83339261.js.map": "/goit-react-hw-01-components/static/js/main.83339261.js.map"
   },
   "entrypoints": [
     "static/css/main.54a66b89.css",
-    "static/js/main.35df6f86.js"
+    "static/js/main.83339261.js"
   ]
 }

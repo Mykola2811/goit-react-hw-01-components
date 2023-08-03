@@ -29,7 +29,6 @@ export const Header = () => {
           <img src={Image6} alt="rewards" style={{marginBottom: 40}}/>
           <img src={Image7} alt="rewards" style={{marginBottom: 55}}/>
           <img src={Image8} alt="rewards" width={266} style={{marginBottom: 51}}/>
-          <img src={Image11} alt="rewards" />
       </Ul>
 </Wrapper>;
 }

@@ -9,7 +9,6 @@ import Image7 from '../../img/image7.png';
 import Image8 from '../../img/image8.png';
 import Image9 from '../../img/Frame9.png';
 import Image10 from '../../img/Frame6.png';
-import Image11 from '../../img/Group.png';
 import Image12 from '../../img/Frame1.png';
 export const Header = () => {
   return <Wrapper >
